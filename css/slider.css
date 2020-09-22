@@ -1,0 +1,100 @@
+.slider {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+/* Block */
+.block {
+    position: absolute;
+    height: 500px;
+    overflow: hidden;
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header-block {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 0, 0, 0.68);
+    right: 0;
+    left: 0;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 0px;
+    height: 116px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.img-block {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.active {
+    display: block;
+}
+
+/* End Block */
+
+/* Arrows */
+.arrows {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.68);
+    color: white;
+    padding: 5px;
+    top: 210px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.arrows span {
+    font-size: 35px;
+}
+
+.arrows:hover span {
+    color: #a7a7a7;
+}
+
+.a-right {
+    right: 17px;
+}
+
+.a-left {
+    left: 17px;
+}
+/* End Arrows */
+
+/* Point */
+.block-point {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.point {
+    color: white;
+    margin-right: 20px;
+    cursor: pointer;
+}
+/* End Point */
+
+@media screen and (max-width: 1130px) {
+    .a-left, .a-right {
+        top: 80px;
+    }
+    .block img, .block, .slider {
+        height: 300px;
+    }
+    .header-block {
+        height: 130px;
+    }
+}

@@ -1,0 +1,320 @@
+div.boxcenter section.content {
+  padding: 40px;
+  height: 450px;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.boxcenter section.content p {
+  color: #000;
+  border-top: 2px solid #7e7e7e;
+  border-bottom: 2px solid #7e7e7e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+div.boxcenter div.zkenaifram section.mayor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  overflow: hidden;
+  height: 480px;
+}
+
+div.boxcenter div.zkenaifram section.mayor div.box {
+  background-color: #8cbf3f;
+  padding: 15px 15px 15px 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 170px 200px 0 50px #7d049e, -170px -200px 0 50px #f2cc0f;
+}
+
+div.boxcenter div.zkenaifram section.mayor div.box img.imgmayor {
+  width: 220px;
+}
+
+div.boxcenter div.zkenaifram section.mayor div.box p.textmayor {
+  width: 220px;
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 7px;
+  font-size: 15px;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+div.boxcenter div.zkenaifram div.iframe {
+  display: none;
+}
+
+div.boxcenter section.boxdonors {
+  display: block;
+  margin-top: 3px;
+}
+
+div.boxcenter section.boxdonors h1.hesber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 0px;
+  height: 50px;
+  margin-bottom: 2px;
+  text-align: center;
+  background-color: #8cbf3f;
+  color: #fff;
+}
+
+div.boxcenter section.boxdonors div.donors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 0px;
+  margin-bottom: 3px;
+  height: 307.2px;
+  overflow: hidden;
+}
+
+div.boxcenter section.boxdonors div.donors div.box {
+  overflow: hidden;
+  width: 220px;
+  animation-name: boxopenn;
+  animation-timing-function: linear;
+  animation-duration: 1.5s;
+  background-color: rgba(125, 4, 158, 0.637);
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+div.boxcenter section.boxdonors div.donors div.box h2 {
+  font-size: 25px;
+  text-align: center;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+div.boxcenter section.boxdonors div.donors div.box p {
+  font-size: 15px;
+  text-align: center;
+  overflow: hidden;
+  height: 110px;
+  word-wrap: break-word;
+  color: #fff;
+}
+
+div.boxcenter section.boxdonors div.donors div.box a.maavar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000;
+  background-color: #f2cc0f;
+  width: 100px;
+  padding: 5px;
+}
+
+div.boxcenter section.boxdonors div.donors1 {
+  background-image: url("../img/vendors/Ace Hotel New Orleans/NOLA-Rooms-Corner-Hero_nm62Z5c.width-960.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+div.boxcenter section.boxdonors div.donors2 {
+  background-image: url("../img/vendors/Haunted Museum/funeral-black-and-white.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+div.boxcenter section.boxdonors div.donors3 {
+  background-image: url("../img/vendors/Louisiana Childrens Museum/LCM_121_move-with-river_homepage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+div.boxcenter section.boxdonors div.donors4 {
+  background-image: url("../img/vendors/Museum of Death/ss.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+div.boxcenter section.boxdonors div.donors5 {
+  background-image: url("../img/vendors/Premium Parking-P402/IMG_20171019_094355788.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+div.boxcenter section.boxdonors div.donors6 {
+  background-image: url("../img/vendors/Sheraton New Orleans Hotel/msyis-waterbury-0816-hor-wide.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+div.boxcenter section.boxdonors div.donors7 {
+  background-image: url("../img/vendors/The Ritz-Carlton, New Orleans/RCNWORL_00098_conversion.jfif");
+  background-size: cover;
+  background-position: center;
+}
+
+div.boxcenter section.boxdonors div.donors8 {
+  background-image: url("../img/vendors/Walk-Ons Bistreaux and Bar/wo-photo-jubanvipnight-03-1916-4_e28d16af720f4460d4af3dab37ce6e87.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes boxopenn {
+  0% {
+    padding: 0 0;
+    height: 0px;
+  }
+  100% {
+    padding: 20px 30px;
+    height: 227.2px;
+  }
+}
+
+div.iframe2 {
+  display: none;
+}
+
+@media screen and (min-width: 576px) {
+  div.boxcenter section.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  div.boxcenter div.zkenaifram section.mayor div.box {
+    box-shadow: 325px 350px 0 200px #7d049e, -325px -350px 0 200px #f2cc0f;
+  }
+  div.boxcenter section.boxdonors {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  div.boxcenter section.boxdonors h1.hesber {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  div.boxcenter {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 470px auto;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  div.boxcenter section.content {
+    padding: 70px !important;
+    height: 470px;
+  }
+  div.boxcenter div.zkenaifram {
+    display: grid;
+    grid-column: 2/2;
+  }
+  div.boxcenter div.zkenaifram section.mayor {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    margin-left: 1%;
+  }
+  div.boxcenter div.zkenaifram section.mayor div.box {
+    display: inline-block;
+    position: sticky;
+    box-shadow: none;
+  }
+  div.boxcenter div.zkenaifram div.iframe {
+    display: flex;
+    justify-content: center;
+    height: 1300px;
+  }
+  div.boxcenter div.zkenaifram div.iframe iframe {
+    position: sticky;
+    top: 10px;
+    height: 520px;
+    width: 260px;
+    margin: 0;
+  }
+  div.boxcenter section.boxdonors {
+    grid-template-columns: auto auto;
+  }
+  div.boxcenter section.boxdonors div.donors {
+    margin-right: 3px;
+  }
+  div.boxcenter section.boxdonors h1.hesber {
+    margin-right: 3px;
+  }
+  div.iframe2 {
+    position: fixed;
+    top: 0;
+    min-height: 100%;
+    max-height: 100%;
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    margin-left: 3px;
+    overflow: hidden;
+  }
+  div.iframe2 iframe {
+    height: 520px;
+    width: 255px;
+    margin: 0;
+    z-index: 5;
+    overflow: hidden;
+  }
+  div.iframe2 iframe a {
+    overflow: hidden;
+  }
+  div.iframe2 div.open {
+    background-color: #fff;
+    color: #000;
+    width: 35px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    margin-left: 5px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  div.boxcenter {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+  div.boxcenter section.boxdonors {
+    grid-template-columns: auto auto auto;
+  }
+  div.boxcenter section.boxdonors h1.hesber {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  div.boxcenter div.iframe {
+    height: 970px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  div.boxcenter {
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
+  div.boxcenter section.content {
+    padding-top: 115px !important;
+    padding-bottom: 115px !important;
+    padding-left: 300px !important;
+    padding-right: 300px !important;
+    box-sizing: border-box;
+  }
+}
+
+.zi-3 {
+  z-index: 3;
+}

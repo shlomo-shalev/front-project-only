@@ -1,0 +1,181 @@
+section.form {
+  padding-top: 20px;
+}
+
+section.form p.maidha {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #7d049e;
+}
+
+section.form form div.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.form form div.left input {
+  margin-bottom: 5px;
+  margin-top: 5px;
+  border: none;
+  background-color: #8cbf3f;
+  color: #7d049e;
+  width: 225px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 5px;
+}
+
+section.form form div.left span {
+  color: red;
+  margin-top: -5px;
+  margin-bottom: 2px;
+}
+
+section.form form div.left label {
+  font-size: 17px;
+  margin-bottom: 0px;
+  display: none;
+}
+
+section.form form div.right {
+  margin-top: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.form form div.right span {
+  color: red;
+  margin-top: -5px;
+  margin-bottom: 2px;
+}
+
+section.form form div.right span.Approval {
+  color: #000;
+  font-size: 15px;
+  margin-top: 7px;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+section.form form div.right label {
+  font-size: 17px;
+  text-align: left;
+  margin-bottom: 0px;
+  display: none;
+}
+
+section.form form div.right textarea {
+  border: none;
+  resize: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 5px;
+  width: 225px;
+  height: 300px;
+  color: #7d049e;
+  height: 200px;
+  margin-bottom: 4px;
+  margin-top: 2px;
+  background-color: #8cbf3f;
+}
+
+section.form form div.right input[type=button] {
+  margin-top: 5px;
+  font-weight: bold;
+  border: none;
+  background-color: #f2cc0f;
+  color: #7d049e;
+  padding: 10px 20px 10px 20px;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  section.form form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section.form form div.left {
+    padding-top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section.form form div.left label {
+    text-align: left;
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  section.form form div.left input::-webkit-input-placeholder {
+    visibility: hidden;
+  }
+  section.form form div.left input:-ms-input-placeholder {
+    visibility: hidden;
+  }
+  section.form form div.left input::-ms-input-placeholder {
+    visibility: hidden;
+  }
+  section.form form div.left input::placeholder {
+    visibility: hidden;
+  }
+  section.form form div.right {
+    margin-left: 10px;
+  }
+  section.form form div.right label {
+    display: block;
+    max-width: 100%;
+    min-width: 100%;
+  }
+  section.form form div.right span.Approval {
+    width: 230px;
+  }
+  section.form form div.right textarea::-webkit-input-placeholder {
+    visibility: hidden;
+  }
+  section.form form div.right textarea:-ms-input-placeholder {
+    visibility: hidden;
+  }
+  section.form form div.right textarea::-ms-input-placeholder {
+    visibility: hidden;
+  }
+  section.form form div.right textarea::placeholder {
+    visibility: hidden;
+  }
+}

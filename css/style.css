@@ -1,0 +1,571 @@
+:root {
+    --nn: none;
+    --fx: flex;
+    --white: #fff;
+    --size: 100%;
+    --cen: center;
+}
+
+h1,h3,h5 {
+    font-family: 'Pattaya';
+}
+
+h2,h4,h6 {
+    font-family: 'Henny Penny';
+
+}
+
+p,pre {
+    font-family: 'Roboto', sans-serif;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: var(--nn);
+}
+
+header {
+    background-color: #F2CC0F;
+    height: 60px;
+    box-shadow: 0px 1px 5px 0px rgba(146, 146, 146, 0.281);
+    position: relative;
+    z-index: 10;
+}
+
+header span.yecholot a img.logo {
+    width: 55px;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+header span.yecholot .buttonav,
+header span.boxsearch span.Search {
+    display: inline-block;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 17px;
+    color: rgb(125, 4, 158);
+}
+
+header span.boxsearch input.textSearch,
+header span.boxsearch span.backwards {
+    display: var(--nn);
+}
+
+header span.boxsearch input.textSearch {
+    padding-left: 10px;
+    color: var(--white);
+}
+
+header span.yecholot nav {
+    display: var(--nn);
+    position: fixed;
+    background-color: #8CBF3F;
+    box-shadow: 1px 0px 3px 1px rgba(146, 146, 146, 0.205);
+    min-height: var(--size);
+    animation-name: example;
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    min-width: 70%;
+    max-width: 70%;
+    padding: 20px;
+    padding-top: 20px;
+    top: 0;
+    z-index: 100;
+    max-width: 0;
+    overflow: hidden;
+}
+
+/*.www {
+    animation-name: example1;
+    animation-duration: 1.5s;
+}
+
+@keyframes example1 {
+    from {min-width: 0%;
+        max-width: 0%;}
+  to {min-width: 70%;
+    max-width: 70%;}
+}*/
+
+@keyframes example {
+    0%,18% {
+        margin-left: -40px;
+        min-width: 0%;
+        max-width: 0%;
+    }
+  60%, 100% {
+    margin-left: 0px;
+    min-width: 70%;
+    max-width: 70%;
+}
+}
+
+@keyframes example1 {
+    0%,18% {
+    margin-left: 0px;
+    min-width: 70%;
+    max-width: 70%;
+    }
+  60%, 100% {
+    margin-left: -40px;
+    min-width: 0%;
+    max-width: 0%;
+}
+}
+
+header span.yecholot nav a.varu,
+header span.yecholot nav div.donorsget a.donors {
+    display: block;
+    font-size: 20px;
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    background-color: #9453A6;
+    color: var(--white);
+    font-family: 'Pattaya', 'Henny Penny';
+}
+
+header span.yecholot nav div.donorsget span.openn a.dononame {
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #9453A6;
+    color: var(--white);
+    font-family: 'Pattaya', 'Henny Penny';
+    margin-left: 30px;
+    padding-left: 15px;
+    font-size: 20px;
+    max-width: var(--size);
+    height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+header span.yecholot nav div.donorsget span.openn {
+    display: var(--nn);
+    overflow-x: hidden;
+    max-width: var(--size);
+    padding-top: 10px;
+    margin-top: -20px;
+    height: 20px;
+    animation-name: openn;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    overflow: hidden;
+}
+
+@keyframes openn {
+    0% {
+        height: 20px;
+    }
+    100% {
+        height: 180px;
+    }
+}
+
+@keyframes openn2 {
+    0% {
+        height: 180px;
+    }
+    100% {
+        height: 20px;
+    }
+}
+
+header span.yecholot nav div.donorsget a.donors {
+    display: var(--fx);
+    justify-content: space-between;
+    color: var(--white);
+}
+
+header span.yecholot nav div.donorsget a span {
+    font-size: 13px;
+    padding-top: 9px;
+}
+
+header span.yecholot nav .closed {
+    font-size: 25px;
+    box-sizing: border-box;
+    padding-top: 4.9px;
+    margin-top: -25px;
+    color: rgb(125, 4, 158);
+    margin-bottom: 20px;
+}
+
+header span.yecholot nav div.donorsget a.donors span.plus {
+    font-size: 15px;
+}
+
+footer {
+    background-color: #9453A6;
+    padding-bottom: 10px;
+    padding-bottom: 30px;
+    margin-top: 2px;
+}
+
+footer div.pratimm div.gethead,
+footer div.pratimm div.sapacim {
+    display: flex;
+    justify-content: var(--cen);
+    align-items: var(--cen);
+    flex-direction: column;
+}
+
+footer div.pratimm div.gethead {
+    margin-top: -5px;
+}
+
+footer div.pratimm div.gethead a,
+footer div.pratimm div.sapacim a {
+    color: #F2CC0F;
+    font-weight: bold;
+}
+
+footer div.pratimm div.gethead h1,
+footer div.pratimm div.sapacim h1 {
+    font-weight: bold;
+    color: #8CBF3F;
+    font-size: 25px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+footer p.pratiyocher {
+    display: var(--fx);
+    justify-content: var(--cen);
+    align-items: var(--cen);
+    padding-top: 25px;
+    color: var(--white);
+}
+
+footer div.linkfrend {
+    display: var(--fx);
+    justify-content: var(--cen);
+    align-items: var(--cen);
+    position: relative;
+    top: -25px;
+    margin-left: 10px;
+}
+
+footer div.linkfrend a.youtube,
+footer div.linkfrend a.twitter,
+footer div.linkfrend a.facebook,
+footer div.linkfrend a.instagram {
+    border: 3px solid #F2CC0F;
+    border-radius: var(--size);
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    display: var(--fx);
+    justify-content: var(--cen);
+    align-items: var(--cen);
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+footer .linkfrend a.facebook img,
+footer .linkfrend a.youtube img {
+    width: 30px;
+}
+
+footer .linkfrend a.instagram img {
+    width: 50px;
+}
+
+footer .linkfrend a.twitter img {
+    width: 40px;
+    margin-left: 3px;
+}
+
+@media screen and (min-width: 576px) {
+    header span.yecholot a:hover {
+        text-decoration: var(--nn);
+    }
+
+    header span.boxsearch {
+        display: inline-flex;
+        justify-content: var(--cen);
+        align-items: var(--cen);
+    }
+
+    header span.boxsearch span.Search {
+        background-color: rgb(125, 4, 158);
+        color: rgb(125, 4, 158);
+        height: 40px;
+        display: inline-flex;
+        justify-content: var(--cen);
+        align-items: var(--cen);
+    }
+
+    header span.boxsearch span.Search::before {
+        display: var(--fx);
+        justify-content: var(--cen);
+        color: white;
+        font-size: 20px;
+    }
+
+    header span.boxsearch input.textSearch {
+        display: inline-block;
+        height: 40px;
+        max-width: 200px;
+        border: var(--nn);
+        outline: var(--nn);
+        font-size: 20px;
+        background-color: #8CBF3F;
+        margin-right: 10px;
+    }
+
+    input.textSearch::placeholder {
+        color: white !important;
+    }
+
+    header span.yecholot {
+        min-width: 110px;
+    }
+
+    footer div.linkfrend a.youtube,
+    footer div.linkfrend a.twitter,
+    footer div.linkfrend a.facebook,
+    footer div.linkfrend a.instagram {
+        margin-right: 30px;
+    }
+
+    footer div.pratimm div.nosa {
+        margin-top: 20px;
+    }
+
+    footer div.pratimm div.sapacim,
+    footer div.pratimm div.gethead {
+        width: 200px;
+    }
+
+    footer div.pratimm div.sapacim a,
+    footer div.pratimm div.gethead a {
+        display: block;
+    }
+
+    footer div.pratimm {
+        display: var(--fx);
+        justify-content: var(--cen);
+        align-items: var(--cen);
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    footer div.pratimm div.gethead {
+        margin-top: 0;
+    }
+
+    footer div.linkfrend {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    footer div.pratimm div.gethead,
+    footer div.pratimm div.sapacim {
+        width: 300px;
+    }
+
+    footer div.pratimm div.gethead a,
+    footer div.pratimm div.sapacim a {
+        color: #F2CC0F;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    footer div.pratimm div.gethead h1,
+    footer div.pratimm div.sapacim h1 {
+        font-weight: bold;
+        color: #8CBF3F;
+        font-size: 30px;
+        margin-bottom: 5px;
+        margin-top: 10px;
+    }
+
+    footer div.linkfrend {
+        margin-left: 35px;
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    header span.yecholot nav {
+        animation-name: none;
+        animation-duration: 0s;
+        display: inline-flex !important;
+        flex-direction: row !important;
+        position: static;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow: 0 0 0 0;
+        min-width: 800px;
+    } 
+    header span.yecholot .buttonav {
+        display: var(--nn);
+    }   
+
+    header span.yecholot nav .closed {
+        display: var(--nn);
+    }
+
+    @keyframes openn {
+        0% {
+            height: 0px;
+        }
+        100% {
+            height: 180px;
+        }
+    }
+    
+    @keyframes openn2 {
+        0% {
+            height: 180px;
+        }
+        100% {
+            height: 0px;
+        }
+    }
+
+    header span.yecholot nav div.donorsget span.openn a.dononame {
+        box-sizing: border-box;
+        color: var(--white);
+        font-family: 'Pattaya', 'Henny Penny';
+        margin-left: 5px;
+        font-size: 15px;
+        padding-top: 4px;
+        margin-bottom: 3px;
+    }
+
+    header span.yecholot nav div.donorsget span.openn {
+        display: var(--nn);
+        position: relative;
+        z-index: 3;
+        padding-top: 0;
+        margin-top: 0px;
+    }
+
+    header span.yecholot nav a.varu,
+    header span.yecholot nav div.donorsget a.donors {
+        font-size: 20px;
+        color: var(--white);
+        font-family: 'Pattaya', 'Henny Penny';
+        margin-left: 5px;
+        height: 40px;
+        padding: 5px 15px;
+        margin-bottom: 3px;
+    }
+
+    header span.yecholot nav div.donorsget {
+        width: 110px;
+    }
+
+    header span.yecholot nav div.donorsget a.donors span.plus {
+        font-size: 10px;
+        margin-top: 3px;
+    }
+
+    header span.yecholot {
+        min-width: 700px;
+    }
+
+    header span.yecholot a img.logo {
+        margin-left: 5px;
+        margin-bottom: -3px;
+        margin-right: -15px;
+    }
+}
+
+/*header span.yecholot span.boxsearch*/
+
+.element1 {
+    height: 61px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: var(--white);
+    display: var(--fx);
+}
+
+/*header span.yecholot span.boxsearch span.Search*/
+
+.element2 {
+    height: 60px;
+    min-width: 15%;
+    background-color: rgb(125, 4, 158);
+}
+
+.element2::before {
+    display: var(--fx);
+    justify-content: var(--cen);
+    color: #F2CC0F;
+}
+
+/*header span.yecholot span.boxsearch input.textSearch*/
+
+.element3 {
+    display: block !important;
+    left: 60px;
+    height: 60px;
+    font-size: 30px;
+    min-width: 70%;
+    background-color: #8CBF3F;
+    border: var(--nn);
+    outline: var(--nn);
+    padding-left: 3px;
+}
+
+/*header span.yecholot span.boxsearch span.backwards*/
+.element4 {
+    display: block !important;
+    height: 60px;
+    min-width: 15%;
+    color: rgb(125, 4, 158);
+    background-color: #F2CC0F;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 17px;
+}
+
+.element4::before {
+    display: var(--fx);
+    justify-content: var(--cen);
+}
+
+.element5 {
+    display: block !important;
+    height: 180px !important;
+    animation-name: openn !important;
+}
+
+.element6 {
+    display: block !important;
+    animation-name: openn2 !important;
+}
+
+.element7 {
+    display: none !important;
+}
+
+.cover {
+    object-fit: cover;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}

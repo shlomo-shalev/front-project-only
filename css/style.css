@@ -40,8 +40,8 @@ header span.yecholot a img.logo {
     margin-left: -10px;
 }
 
-header span.yecholot .buttonav,
-header span.boxsearch span.Search {
+header span.yecholot .hamburger,
+header span.box-search span.search {
     display: inline-block;
     font-size: 25px;
     box-sizing: border-box;
@@ -49,12 +49,12 @@ header span.boxsearch span.Search {
     color: rgb(125, 4, 158);
 }
 
-header span.boxsearch input.textSearch,
-header span.boxsearch span.backwards {
+header span.box-search input.text-search,
+header span.box-search span.exit {
     display: var(--nn);
 }
 
-header span.boxsearch input.textSearch {
+header span.box-search input.text-search {
     padding-left: 10px;
     color: var(--white);
 }
@@ -65,13 +65,6 @@ header span.yecholot nav {
     background-color: #8CBF3F;
     box-shadow: 1px 0px 3px 1px rgba(146, 146, 146, 0.205);
     min-height: var(--size);
-    animation-name: example;
-    -webkit-animation-name: example;
-    -webkit-animation-duration: 1.5s;
-    animation-duration: 1.5s;
-    min-width: 70%;
-    max-width: 70%;
-    padding: 20px;
     padding-top: 20px;
     top: 0;
     z-index: 100;
@@ -79,52 +72,17 @@ header span.yecholot nav {
     overflow: hidden;
 }
 
-/*.www {
-    animation-name: example1;
-    animation-duration: 1.5s;
-}
-
-@keyframes example1 {
-    from {min-width: 0%;
-        max-width: 0%;}
-  to {min-width: 70%;
-    max-width: 70%;}
-}*/
-
-@keyframes example {
-    0%,18% {
-        margin-left: -40px;
-        min-width: 0%;
-        max-width: 0%;
-    }
-  60%, 100% {
-    margin-left: 0px;
-    min-width: 70%;
-    max-width: 70%;
-}
-}
-
-@keyframes example1 {
-    0%,18% {
-    margin-left: 0px;
-    min-width: 70%;
-    max-width: 70%;
-    }
-  60%, 100% {
-    margin-left: -40px;
-    min-width: 0%;
-    max-width: 0%;
-}
-}
-
 header span.yecholot nav a.varu,
 header span.yecholot nav div.donorsget a.donors {
     display: block;
     font-size: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
     box-sizing: border-box;
-    margin-left: 0px;
-    margin-top: -10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: clip;
     background-color: #9453A6;
     color: var(--white);
     font-family: 'Pattaya', 'Henny Penny';
@@ -154,28 +112,7 @@ header span.yecholot nav div.donorsget span.openn {
     padding-top: 10px;
     margin-top: -20px;
     height: 20px;
-    animation-name: openn;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
     overflow: hidden;
-}
-
-@keyframes openn {
-    0% {
-        height: 20px;
-    }
-    100% {
-        height: 180px;
-    }
-}
-
-@keyframes openn2 {
-    0% {
-        height: 180px;
-    }
-    100% {
-        height: 20px;
-    }
 }
 
 header span.yecholot nav div.donorsget a.donors {
@@ -191,11 +128,9 @@ header span.yecholot nav div.donorsget a span {
 
 header span.yecholot nav .closed {
     font-size: 25px;
-    box-sizing: border-box;
-    padding-top: 4.9px;
-    margin-top: -25px;
+    margin-bottom: 10px;
+    margin-left: 20px;
     color: rgb(125, 4, 158);
-    margin-bottom: 20px;
 }
 
 header span.yecholot nav div.donorsget a.donors span.plus {
@@ -289,13 +224,13 @@ footer .linkfrend a.twitter img {
         text-decoration: var(--nn);
     }
 
-    header span.boxsearch {
+    header span.box-search {
         display: inline-flex;
         justify-content: var(--cen);
         align-items: var(--cen);
     }
 
-    header span.boxsearch span.Search {
+    header span.box-search span.search {
         background-color: rgb(125, 4, 158);
         color: rgb(125, 4, 158);
         height: 40px;
@@ -304,14 +239,14 @@ footer .linkfrend a.twitter img {
         align-items: var(--cen);
     }
 
-    header span.boxsearch span.Search::before {
+    header span.box-search span.search::before {
         display: var(--fx);
         justify-content: var(--cen);
         color: white;
         font-size: 20px;
     }
 
-    header span.boxsearch input.textSearch {
+    header span.box-search input.text-search {
         display: inline-block;
         height: 40px;
         max-width: 200px;
@@ -322,7 +257,7 @@ footer .linkfrend a.twitter img {
         margin-right: 10px;
     }
 
-    input.textSearch::placeholder {
+    input.text-search::placeholder {
         color: white !important;
     }
 
@@ -398,39 +333,21 @@ footer .linkfrend a.twitter img {
 
 @media screen and (min-width: 1130px) {
     header span.yecholot nav {
-        animation-name: none;
-        animation-duration: 0s;
         display: inline-flex !important;
         flex-direction: row !important;
         position: static;
         background-color: rgba(255, 255, 255, 0);
         box-shadow: 0 0 0 0;
         min-width: 800px;
+        padding-top: 10px;
+        padding-left: 10px;
     } 
-    header span.yecholot .buttonav {
+    header span.yecholot .hamburger {
         display: var(--nn);
     }   
 
     header span.yecholot nav .closed {
         display: var(--nn);
-    }
-
-    @keyframes openn {
-        0% {
-            height: 0px;
-        }
-        100% {
-            height: 180px;
-        }
-    }
-    
-    @keyframes openn2 {
-        0% {
-            height: 180px;
-        }
-        100% {
-            height: 0px;
-        }
     }
 
     header span.yecholot nav div.donorsget span.openn a.dononame {
@@ -457,6 +374,7 @@ footer .linkfrend a.twitter img {
         color: var(--white);
         font-family: 'Pattaya', 'Henny Penny';
         margin-left: 5px;
+        margin-right: 0px;
         height: 40px;
         padding: 5px 15px;
         margin-bottom: 3px;
@@ -482,7 +400,7 @@ footer .linkfrend a.twitter img {
     }
 }
 
-/*header span.yecholot span.boxsearch*/
+/*header span.yecholot span.box-search*/
 
 .element1 {
     height: 61px;
@@ -494,7 +412,7 @@ footer .linkfrend a.twitter img {
     display: var(--fx);
 }
 
-/*header span.yecholot span.boxsearch span.Search*/
+/*header span.yecholot span.box-search span.Search*/
 
 .element2 {
     height: 60px;
@@ -508,7 +426,7 @@ footer .linkfrend a.twitter img {
     color: #F2CC0F;
 }
 
-/*header span.yecholot span.boxsearch input.textSearch*/
+/*header span.yecholot span.box-search input.text-search*/
 
 .element3 {
     display: block !important;
@@ -522,7 +440,7 @@ footer .linkfrend a.twitter img {
     padding-left: 3px;
 }
 
-/*header span.yecholot span.boxsearch span.backwards*/
+/*header span.yecholot span.box-search span.exit*/
 .element4 {
     display: block !important;
     height: 60px;
@@ -542,16 +460,6 @@ footer .linkfrend a.twitter img {
 .element5 {
     display: block !important;
     height: 180px !important;
-    animation-name: openn !important;
-}
-
-.element6 {
-    display: block !important;
-    animation-name: openn2 !important;
-}
-
-.element7 {
-    display: none !important;
 }
 
 .cover {

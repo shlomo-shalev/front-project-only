@@ -2,6 +2,23 @@ Object.prototype.getStyle = function (){
     return window.getComputedStyle(this);
 };
 
+Object.prototype.nextElement = function (){
+    return this.nextSibling.nextElementSibling;
+};
+
+Object.prototype.validate = function (type, val){
+    
+    var data = {
+        name: /^(?!.*\s\s)(?!.*\.\.)(?!.*,,)[a-zA-Z\s.,]{2,50}$/,
+        lastName: /^(?!.*\s\s)(?!.*\.\.)(?!.*,,)[a-zA-Z\s.,]{2,70}$/,
+        email: /^(?!.*\.\.)[\w.\-#!$%&'*+\/=?^_`{}|~]{1,35}@[\w.\-]+\.[a-zA-Z]{2,15}$/,
+        content: /^[a-z0-9\s,."'\$\*\!]{2,1040}$/i
+    };
+
+    return data[type].test(val);
+
+};
+
 function docAll(value){
     return document.querySelectorAll(value);
 }

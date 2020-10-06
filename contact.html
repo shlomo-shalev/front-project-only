@@ -44,22 +44,22 @@
         </p>
         <form action="">
             <div class="left">
-            <label class="namelab">name</label>
-            <input type="text" placeholder="name" class="name">
-            <span class="textname"></span>
-            <label class="namelab">last name</label>
-            <input type="text" placeholder="last name" class="lastname">
-            <span class="textlastname"></span>
-            <label class="namelab">email</label>
-            <input type="email" placeholder="email" class="email">
-            <span class="textemail"></span>
+            <label>name</label>
+            <input type="text" placeholder="name" name="name" class="name">
+            <span class="errors"></span>
+            <label>last name</label>
+            <input type="text" placeholder="last name" name="last-name" class="last-name">
+            <span class="errors"></span>
+            <label>email</label>
+            <input type="email" placeholder="email" name="email" class="email">
+            <span class="errors"></span>
             </div>
             <div class="right">
-            <label class="namelab">Free Text</label>
-            <textarea class="textarea" placeholder="Free Text"></textarea>
-            <span class="textextarea"></span>
-            <input type="button" value="send">
-            <span class="Approval"></span>
+            <label>Free Text</label>
+            <textarea class="content" name="content" placeholder="Free Text"></textarea>
+            <span class="errors"></span>
+            <input type="submit" name="submit" class="submit" value="send">
+            <span class="main-error"></span>
         </div>
             <br>
             <br>

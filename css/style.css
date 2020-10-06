@@ -338,7 +338,8 @@ footer .linkfrend a.twitter img {
         position: static;
         background-color: rgba(255, 255, 255, 0);
         box-shadow: 0 0 0 0;
-        min-width: 800px;
+        min-width: auto !important;
+        min-width: 800px !important;
         padding-top: 10px;
         padding-left: 10px;
     } 

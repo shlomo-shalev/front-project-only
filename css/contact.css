@@ -66,16 +66,17 @@ section.form form div.right {
           flex-direction: column;
 }
 
-section.form form div.right span {
+.errors {
   color: red;
   margin-top: -5px;
   margin-bottom: 2px;
 }
 
-section.form form div.right span.Approval {
-  color: #000;
+section.form form div.right span.main-error {
+  color: #9453A6;
   font-size: 15px;
   margin-top: 7px;
+  font-weight: bold;
   padding: 15px;
   display: block;
   text-align: center;
@@ -103,7 +104,7 @@ section.form form div.right textarea {
   background-color: #8cbf3f;
 }
 
-section.form form div.right input[type=button] {
+section.form form div.right input[type=submit] {
   margin-top: 5px;
   font-weight: bold;
   border: none;
@@ -114,68 +115,4 @@ section.form form div.right input[type=button] {
 
 footer {
   margin-top: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  section.form form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  section.form form div.left {
-    padding-top: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  section.form form div.left label {
-    text-align: left;
-    display: block;
-    max-width: 100%;
-    min-width: 100%;
-  }
-  section.form form div.left input::-webkit-input-placeholder {
-    visibility: hidden;
-  }
-  section.form form div.left input:-ms-input-placeholder {
-    visibility: hidden;
-  }
-  section.form form div.left input::-ms-input-placeholder {
-    visibility: hidden;
-  }
-  section.form form div.left input::placeholder {
-    visibility: hidden;
-  }
-  section.form form div.right {
-    margin-left: 10px;
-  }
-  section.form form div.right label {
-    display: block;
-    max-width: 100%;
-    min-width: 100%;
-  }
-  section.form form div.right span.Approval {
-    width: 230px;
-  }
-  section.form form div.right textarea::-webkit-input-placeholder {
-    visibility: hidden;
-  }
-  section.form form div.right textarea:-ms-input-placeholder {
-    visibility: hidden;
-  }
-  section.form form div.right textarea::-ms-input-placeholder {
-    visibility: hidden;
-  }
-  section.form form div.right textarea::placeholder {
-    visibility: hidden;
-  }
 }

@@ -51,9 +51,9 @@ section.pratimnosafim a.link2 {
   section.slider {
     height: 300px;
   }
-  section.slider span.arrowleft,
-  section.slider span.arrowright {
-    top: 140px;
+  section.slider span.a-left,
+  section.slider span.a-right {
+    top: 120px;
   }
 }
 
@@ -95,6 +95,9 @@ section.pratimnosafim a.link2 {
   footer {
     margin-top: 35px;
   }
+  .a-right, .a-left {
+    top: 80px;
+  }
 }
 
 .slider, .block, .img-block {
@@ -110,9 +113,5 @@ section.pratimnosafim a.link2 {
 @media screen and (min-width: 1200px){
     .header-block {
         font-size: 1.7em;
-    }
-
-    .arrows {
-        top: 130px;
     }
 }
